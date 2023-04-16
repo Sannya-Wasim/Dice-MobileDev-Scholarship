@@ -66,8 +66,8 @@ export const LoginStyles = StyleSheet.create({
     height: 50,
   },
   container: {
+    flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    margin: 5,
   },
 });

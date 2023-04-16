@@ -16,9 +16,9 @@ export default function Login() {
   const [password, setPassword] = React.useState("Set Password");
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text style={styles.head}>Sign Up</Text>
-      <View style={styles.container}>
+      <View>
         <TextInput style={styles.input} placeholder={name} />
         <TextInput style={styles.input} placeholder={email} />
         <TextInput style={styles.input} placeholder={phone} />
