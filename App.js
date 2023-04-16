@@ -8,6 +8,8 @@ import Login from "./src/components/Login";
 import StudentClass from "./src/components/StudentClass";
 import Signup from "./src/components/Signup";
 import Counter from "./src/components/Counter";
+import StudentList from "./src/components/StudentList";
+import StudentDetail from "./src/components/StudentDetail";
 
 const Stack = createNativeStackNavigator();
 
@@ -15,9 +17,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Login">
+        {/* <Stack.Navigator initialRouteName="Login">
           <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="Signup" component={Signup} />
+          <Stack.Screen name="Signup" component={Signup} /> */}
+        <Stack.Navigator>
+          <Stack.Screen name="StudentList" component={StudentList} />
+          <Stack.Screen name="StudentDetail" component={StudentDetail} />
         </Stack.Navigator>
       </NavigationContainer>
     </View>
@@ -40,5 +45,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
+    backgroundColor: "white",
   },
 });
