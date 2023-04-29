@@ -10,8 +10,9 @@ export default function Student(props) {
     // Student Card
     <View style={styles.cardContainer}>
       {/* Student Heading */}
-      <View style={styles.headingView}>
-        <Text style={styles.headingStyle}>Student</Text>
+      <View>
+        <Text style={styles.headingView}>STUDENT</Text>
+        <Text style={styles.headingStyle}>IDENTITY CARD</Text>
       </View>
 
       {/* Description Container */}
@@ -37,6 +38,7 @@ export default function Student(props) {
         {/* Images Container */}
         <View>
           <Image source={props.image} style={styles.image}></Image>
+          <Text style={{ textAlign: "center" }}>012 345 678 9</Text>
         </View>
       </View>
     </View>

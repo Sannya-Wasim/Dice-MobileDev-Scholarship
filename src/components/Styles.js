@@ -2,19 +2,23 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   image: {
-    width: 100,
-    height: 100,
-    margin: 20,
+    width: 150,
+    height: 150,
   },
   headingView: {
     borderBottomWidth: 1,
     borderColor: "green",
+    color: "green",
+    fontWeight: "800",
+    fontSize: 23,
+    marginLeft: 10,
   },
   headingStyle: {
-    color: "green",
+    color: "white",
     padding: 10,
-    fontSize: 23,
+    fontSize: 13,
     fontWeight: "600",
+    marginLeft: 10,
   },
   studentHeading: {
     color: "green",
@@ -26,14 +30,15 @@ export const styles = StyleSheet.create({
   },
   descContainer: {
     flexDirection: "row",
-    padding: 5,
+    justifyContent: "space-around",
   },
   cardContainer: {
     backgroundColor: "lightgreen",
-    height: 230,
+    height: 280,
     marginHorizontal: 20,
     borderRadius: 20,
     padding: 10,
+    margin: 10,
   },
 });
 
