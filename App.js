@@ -17,12 +17,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        {/* <Stack.Navigator initialRouteName="Login">
+        <Stack.Navigator initialRouteName="Login">
           <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="Signup" component={Signup} /> */}
-        <Stack.Navigator>
+          <Stack.Screen name="Student" component={Student} />
+          {/* <Stack.Navigator>
           <Stack.Screen name="StudentList" component={StudentList} />
-          <Stack.Screen name="StudentDetail" component={StudentDetail} />
+          <Stack.Screen name="StudentDetail" component={StudentDetail} /> */}
         </Stack.Navigator>
       </NavigationContainer>
     </View>
